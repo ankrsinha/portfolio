@@ -2,6 +2,7 @@ import Projects from "./Projects";
 import About from "./About";
 import Blogs from "./Blogs";
 import Divider from "../components/Divider";
+import { Link } from "react-router-dom";
 
 export default function Home() {
     return (
@@ -24,12 +25,12 @@ export default function Home() {
 
                 {/* CTA Buttons */}
                 <div className="mt-8 flex gap-4 flex-wrap justify-center">
-                    <a
-                        href="/projects"
+                    <Link
+                        to="/projects"
                         className="px-6 py-3 bg-indigo-500 rounded-lg hover:bg-indigo-600 transition"
                     >
                         View Projects
-                    </a>
+                    </Link>
 
                     <a
                         href="/Ankur_Sinha_Resume_full.pdf"
