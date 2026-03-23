@@ -40,7 +40,7 @@ function App() {
     <ScrollProgress />
       <Navbar />
 
-      <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
+      <div className="min-h-screen pt-16 bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />

@@ -32,7 +32,7 @@ export default function Home() {
                     </a>
 
                     <a
-                        href="/resume.pdf"
+                        href="/Ankur_Sinha_Resume_full.pdf"
                         download
                         className="px-6 py-3 border border-gray-500 rounded-lg hover:bg-gray-800 transition"
                     >
@@ -82,7 +82,7 @@ export default function Home() {
 
             {/* Sections */}
             <div>
-                <Divider/>
+                <Divider />
                 <Projects />
                 <Divider />
 
