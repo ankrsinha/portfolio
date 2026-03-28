@@ -12,6 +12,7 @@ export const projects = [
         description:
             "Microservices-based real-time bidding system with WebSockets, Kubernetes deployment, and CI/CD.",
         tech: ["Spring Boot", "React", "WebSocket", "Kubernetes"],
+        image: "https://t3.ftcdn.net/jpg/18/55/17/36/240_F_1855173693_Ter3FzRmMIVKY3Ui3bGb8colX0zJm6Rr.jpg",
         github: "https://github.com/Ankur7470/real-time-auction-system",
         featured: true,
     },
@@ -21,6 +22,13 @@ export const projects = [
             "LLM-powered recommendation system using Gemini API with structured prompts and persistence.",
         tech: ["React", "Tailwind", "LLM"],
         github: "https://github.com/Ankur7470/AI-Powered-Wellness-Board",
+        liveUrl:"https://ai-powered-wellness-board.vercel.app",
+        images: [
+            "/images/wellness-1.png",
+            "/images/wellness-2.png",
+            "/images/wellness-3.png",
+            "/images/wellness-4.png"
+        ]
     },
     {
         title: "Predictive Maintenance System",
@@ -42,5 +50,11 @@ export const projects = [
             "Full-stack freelance platform with real-time messaging and secure payments using Stripe API.",
         tech: ["React", "Node.js", "Express", "MongoDB", "Stripe", "WebSockets"],
         github: "https://github.com/Ankur7470/TalentHub-website",
+        liveUrl: "https://talent-hub-website-frontend.vercel.app",
+        images: [
+            "/images/talenthub-1.png",
+            "",
+            ""
+        ]
     },
 ];

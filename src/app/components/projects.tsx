@@ -2,9 +2,10 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { ExternalLink, Github } from "lucide-react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { ImageWithFallback } from "./utils/ImageWithFallback";
 import { motion } from "motion/react";
 import { projects as staticProjects } from "../../data/projects";
+import { ProjectImage } from "./ui/ProjectImage"
 
 interface Project {
   title: string;
@@ -13,7 +14,7 @@ interface Project {
   github?: string;
   liveUrl?: string;
   featured?: boolean;
-  image?: string;
+  images?: string[];
 }
 
 const projects = staticProjects as Project[];
@@ -66,12 +67,8 @@ export function Projects() {
                   <Card className="overflow-hidden group h-full border-2 hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col">
                     <div className="relative h-56 overflow-hidden bg-muted">
                       <div className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-20 z-10 group-hover:opacity-30 transition-opacity duration-300`} />
-                      {project.image ? (
-                        <ImageWithFallback
-                          src={project.image}
-                          alt={project.title}
-                          className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                        />
+                      {project.images ? (
+                        <ProjectImage images={project.images} title={project.title} />
                       ) : (
                         <div className={`w-full h-full bg-gradient-to-br ${gradient} flex items-center justify-center transition-transform duration-500 group-hover:scale-110`}>
                           <span className="text-6xl font-black text-white/30 px-4 text-center leading-tight shadow-sm tracking-tighter">

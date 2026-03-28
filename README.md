@@ -1,16 +1,55 @@
-# React + Vite
+# Ankur Sinha - Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal developer portfolio perfectly crafted to showcase projects, skills, and blog posts. Built with **React.js**, **Vite**, and **Tailwind CSS**, featuring beautiful animations powered by **Framer Motion**.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Modern Tech Stack**: React 18, Vite, and TypeScript for a fast, reliable development experience.
+- **Fully Responsive**: Carefully tuned layouts that look amazing on mobile, tablet, and desktop devices.
+- **Beautiful Animations**: Smooth entry animations and micro-interactions using Framer Motion.
+- **Accessible UI Components**: Built on top of Radix UI primitives.
+- **EmailJS Integration**: Fully functional contact form to get in touch directly.
 
-## React Compiler
+## 🛠️ Built With
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework**: [React](https://react.dev/) + [Vite](https://vitejs.dev/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
 
-## Expanding the ESLint configuration
+## ⚙️ Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+Make sure you have [Node.js](https://nodejs.org/) installed on your machine.
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/ankrsinha/portfolio.git
+   ```
+
+2. Navigate into the project directory:
+   ```bash
+   cd portfolio
+   ```
+
+3. Install the dependencies completely:
+   ```bash
+   npm install
+   ```
+   *(or `yarn install` / `pnpm install`)*
+
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and visit `http://localhost:5173`.
+
+## 🤝 Contributing
+Contributions, issues, and feature requests are welcome! Feel free to check the issues page if you want to contribute.
+
+## 📝 License
+This project is open-source and available under the [MIT License](LICENSE).
