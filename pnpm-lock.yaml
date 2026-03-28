@@ -132,13 +132,13 @@ importers:
         specifier: 0.487.0
         version: 0.487.0(react@18.3.1)
       motion:
-        specifier: 12.23.24
-        version: 12.23.24(@emotion/is-prop-valid@1.4.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^12.38.0
+        version: 12.38.0(@emotion/is-prop-valid@1.4.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       next-themes:
         specifier: 0.4.6
         version: 0.4.6(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react:
-        specifier: ^18.3.1
+        specifier: 18.3.1
         version: 18.3.1
       react-day-picker:
         specifier: 8.10.1
@@ -150,11 +150,14 @@ importers:
         specifier: 16.0.1
         version: 16.0.1
       react-dom:
-        specifier: ^18.3.1
+        specifier: 18.3.1
         version: 18.3.1(react@18.3.1)
       react-hook-form:
         specifier: 7.55.0
         version: 7.55.0(react@18.3.1)
+      react-icons:
+        specifier: ^5.6.0
+        version: 5.6.0(react@18.3.1)
       react-popper:
         specifier: 2.3.0
         version: 2.3.0(@popperjs/core@2.11.8)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -1911,8 +1914,8 @@ packages:
   motion-utils@12.36.0:
     resolution: {integrity: sha512-eHWisygbiwVvf6PZ1vhaHCLamvkSbPIeAYxWUuL3a2PD/TROgE7FvfHWTIH4vMl798QLfMw15nRqIaRDXTlYRg==}
 
-  motion@12.23.24:
-    resolution: {integrity: sha512-Rc5E7oe2YZ72N//S3QXGzbnXgqNrTESv8KKxABR20q2FLch9gHLo0JLyYo2hZ238bZ9Gx6cWhj9VO0IgwbMjCw==}
+  motion@12.38.0:
+    resolution: {integrity: sha512-uYfXzeHlgThchzwz5Te47dlv5JOUC7OB4rjJ/7XTUgtBZD8CchMN8qEJ4ZVsUmTyYA44zjV0fBwsiktRuFnn+w==}
     peerDependencies:
       '@emotion/is-prop-valid': '*'
       react: ^18.0.0 || ^19.0.0
@@ -2081,6 +2084,11 @@ packages:
     engines: {node: '>=18.0.0'}
     peerDependencies:
       react: ^16.8.0 || ^17 || ^18 || ^19
+
+  react-icons@5.6.0:
+    resolution: {integrity: sha512-RH93p5ki6LfOiIt0UtDyNg/cee+HLVR6cHHtW3wALfo+eOHTp8RnU2kRkI6E+H19zMIs03DyxUG/GfZMOGvmiA==}
+    peerDependencies:
+      react: '*'
 
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
@@ -4001,7 +4009,7 @@ snapshots:
 
   motion-utils@12.36.0: {}
 
-  motion@12.23.24(@emotion/is-prop-valid@1.4.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
+  motion@12.38.0(@emotion/is-prop-valid@1.4.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1):
     dependencies:
       framer-motion: 12.38.0(@emotion/is-prop-valid@1.4.0)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       tslib: 2.8.1
@@ -4133,6 +4141,10 @@ snapshots:
   react-fast-compare@3.2.2: {}
 
   react-hook-form@7.55.0(react@18.3.1):
+    dependencies:
+      react: 18.3.1
+
+  react-icons@5.6.0(react@18.3.1):
     dependencies:
       react: 18.3.1
 

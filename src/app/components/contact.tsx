@@ -127,13 +127,13 @@ export function Contact() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5 }}
-              className="md:col-span-2"
+              className="lg:col-span-2"
             >
               <Card className="border-0 shadow-2xl rounded-3xl overflow-hidden bg-card/50 backdrop-blur-sm relative">
                 <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-violet-500 to-blue-600" />

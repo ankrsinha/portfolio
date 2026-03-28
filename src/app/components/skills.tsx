@@ -41,22 +41,33 @@ export function Skills() {
             viewport={{ once: true, margin: "-100px" }}
             className="flex flex-wrap items-center justify-center gap-4"
           >
-            {skills.map((skill: string, index: number) => (
-              <motion.div
-                key={index}
-                variants={{
-                  hidden: { opacity: 0, scale: 0.8 },
-                  visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } }
-                }}
-              >
-                <Badge
-                  variant="secondary"
-                  className="text-lg px-6 py-3 cursor-default hover:shadow-lg hover:-translate-y-1 transition-all duration-300 border border-border/50 bg-secondary/80"
+            {skills.map((skill, index) => {
+              const Icon = skill.icon;
+
+              return (
+                <motion.div
+                  key={index}
+                  variants={{
+                    hidden: { opacity: 0, scale: 0.8 },
+                    visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } }
+                  }}
                 >
-                  {skill}
-                </Badge>
-              </motion.div>
-            ))}
+                  <Badge
+                    variant="secondary"
+                    className="group relative flex items-center justify-center text-lg px-6 py-3 cursor-default hover:shadow-lg hover:-translate-y-1 transition-all duration-300 border border-border/50 bg-secondary/80 overflow-hidden"
+                  >
+                    {/* Icon (absolute, no layout shift) */}
+                    <span className="absolute left-3 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                      <Icon className="w-5 h-5 group-hover:scale-110 transition-transform" />                    </span>
+
+                    {/* Text */}
+                    <span className="transition-all duration-300 group-hover:translate-x-3">
+                      {skill.name}
+                    </span>
+                  </Badge>
+                </motion.div>
+              );
+            })}
           </motion.div>
         </div>
       </div>

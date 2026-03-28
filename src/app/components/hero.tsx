@@ -92,12 +92,12 @@ export function Hero() {
             </Button>
             <Button
               size="lg"
-              variant="secondary"
+              variant="outline"
               className="border-2 hover:bg-accent transition-all hover:scale-105"
               asChild
             >
               <a href="/Ankur_Sinha_Resume_full.pdf" download="Ankur_Sinha_Resume.pdf">
-                <Download className="mr-2 h-4 w-4" />
+                <Download className="h-4 w-4" />
                 Resume
               </a>
             </Button>
@@ -126,7 +126,7 @@ export function Hero() {
               className="hover:scale-110 transition-transform"
               asChild
             >
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://linkedin.com/in/ankur-sinha-3a6256222" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="h-5 w-5" />
                 <span className="sr-only">LinkedIn</span>
               </a>
