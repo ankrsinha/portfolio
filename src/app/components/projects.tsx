@@ -2,7 +2,6 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/
 import { Button } from "./ui/button";
 import { Badge } from "./ui/badge";
 import { ExternalLink, Github } from "lucide-react";
-import { ImageWithFallback } from "./utils/ImageWithFallback";
 import { motion } from "motion/react";
 import { projects as staticProjects } from "../../data/projects";
 import { ProjectImage } from "./ui/ProjectImage"

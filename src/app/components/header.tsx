@@ -37,7 +37,9 @@ export function Header() {
             className="text-xl font-bold bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-400 dark:to-blue-400 bg-clip-text text-transparent cursor-pointer"
             onClick={() => scrollToSection("home")}
           >
-            Portfolio
+            <span className="font-bold text-xl bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">
+              Ankur.dev
+            </span>
           </motion.div>
 
           {/* Desktop Navigation */}
