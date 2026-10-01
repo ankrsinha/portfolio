@@ -65,8 +65,7 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg sm:text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed"
           >
-            I build scalable distributed systems, robust backend services, and cloud-native infrastructure.
-            Passionate about solving complex problems and working close to the metal.
+            I enjoy understanding how systems work under the hood, solving challenging engineering problems, and building reliable software through open source.
           </motion.p>
 
           <motion.div

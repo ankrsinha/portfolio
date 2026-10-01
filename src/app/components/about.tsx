@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 import { features } from "../../data/about.ts";
 
 export function About() {
-  
+
 
   return (
     <section id="about" className="py-20 bg-muted/30 relative overflow-hidden">
@@ -25,20 +25,27 @@ export function About() {
             <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-foreground to-foreground/60 bg-clip-text text-transparent mb-8">
               About Me
             </h2>
+
             <div className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed space-y-6">
               <p>
-                I'm an M.Tech Computer Science student at{" "}
-                <span className="text-foreground font-semibold">IIIT Bangalore</span>,
-                focused on backend systems, distributed systems, and cloud-native technologies.
+                I'm currently working as an{" "}
+                <span className="bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-400 dark:to-blue-400 bg-clip-text text-transparent font-semibold">
+                  Associate Software Engineer at Red Hat
+                </span>
+                , working on cloud-native and Kubernetes-based systems.
               </p>
+
               <p>
-                Currently working as a{" "}
-                <span className="bg-gradient-to-r from-purple-600 to-blue-600 dark:from-purple-400 dark:to-blue-400 bg-clip-text text-transparent font-semibold">Software Engineering Intern at Red Hat</span>,
-                building Kubernetes-native systems using CRDs, controllers, and event-driven architectures.
+                I hold an M.Tech in Computer Science from{" "}
+                <span className="text-foreground font-semibold">IIIT Bangalore</span>{" "}
+                and work across backend systems, distributed systems, infrastructure,
+                and UI development.
               </p>
+
               <p>
-                I enjoy designing scalable systems and working close to infrastructure,
-                solving real-world problems through efficient and reliable system design.
+                I enjoy designing scalable and reliable systems, exploring
+                cloud-native and AI technologies, and contributing to{" "}
+                <span className="text-foreground font-semibold">open source</span>.
               </p>
             </div>
           </motion.div>

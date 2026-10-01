@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 
 export function Header() {
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -64,15 +64,15 @@ export function Header() {
                 <Button
                   variant="ghost"
                   size="icon"
-                  onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
+                  onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
                   className="relative overflow-hidden group"
                 >
                   <motion.div
                     initial={false}
-                    animate={{ rotate: theme === "dark" ? 180 : 0 }}
+                    animate={{ rotate: resolvedTheme === "dark" ? 180 : 0 }}
                     transition={{ duration: 0.3 }}
                   >
-                    {theme === "dark" ? (
+                    {resolvedTheme === "dark" ? (
                       <Sun className="h-5 w-5" />
                     ) : (
                       <Moon className="h-5 w-5" />
